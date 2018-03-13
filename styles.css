@@ -1,0 +1,43 @@
+/*color palette can be found at http://www.color-hex.com/color-palette/57087*/
+body {
+	background-color: #1e2a2d;
+}
+
+.centre {
+	text-align: center;
+}
+
+h1,h2,h3,h4,h5,p {
+	font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	color: #fdfde0;
+	margin: 10px;
+}
+
+a[data-toggle="collapse"] {
+ 	color: #fdfde0;
+}
+
+a[data-toggle="collapse"]::after {
+  	display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    content: transparent url('right.svg') no-repeat;
+
+}
+
+a[aria-expanded="false"]::after {
+ 	display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    content: transparent url('down.svg') no-repeat;
+}
+
+section {
+	background-color: #4e5148;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 5px 5px;
+	margin: 20px;
+}
